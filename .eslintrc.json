@@ -18,13 +18,15 @@
     "plugins": [
         "@typescript-eslint",
         "react",
-        "prettier"
+        "prettier",
+        "better-styled-components"
     ],
     "rules": {
         "react/prop-types": "off",
         "@typescript-eslint/no-var-requires": "off",
         "prettier/prettier": "error",
         "arrow-body-style": "off",
-        "prefer-arrow-callback": "off"
+        "prefer-arrow-callback": "off",
+        "better-styled-components/sort-declarations-alphabetically": 2
     }
 }
