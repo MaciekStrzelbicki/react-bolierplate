@@ -5,8 +5,10 @@ export const StyledSampleComponentWrapper = styled.div``;
 
 export const StyledDivWithBackgroundImage = styled.div`
   background-image: url(${() => sampleimage});
-  height: 43.75rem;
-  width: 65.625rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 12.5rem;
+  width: 12.5rem;
 `;
 
 interface StyledDivWithDynamicBackgroundImageProps {
@@ -15,7 +17,8 @@ interface StyledDivWithDynamicBackgroundImageProps {
 
 export const StyledDivWithDynamicBackgroundImage = styled.div<StyledDivWithDynamicBackgroundImageProps>`
   background-image: url(${({ image }) => image});
+  background-repeat: no-repeat;
   background-size: cover;
-  height: 43.75rem;
-  width: 65.625rem;
+  height: 12.5rem;
+  width: 12.5rem;
 `;
