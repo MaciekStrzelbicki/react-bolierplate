@@ -9,7 +9,7 @@ module.exports = [
   inDev() && new ReactRefreshWebpackPlugin(),
   new HtmlWebpackPlugin({
     template: "src/index.html",
-    favicon: "assets/favicon.png",
+    favicon: "assets/png/favicon.png",
     inject: true,
   }),
   new MiniCssExtractPlugin({
